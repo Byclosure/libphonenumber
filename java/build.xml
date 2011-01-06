@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 
-<project name="libphonenumber" default="compile">
+<project name="libphonenumber" default="jar">
   <property name="src.dir" value="src"/>
   <property name="test.dir" value="test"/>
   <property name="build.dir" value="build"/>
@@ -37,7 +37,7 @@
         <exclude name="**/*Test*"/>
       </fileset>
       <fileset dir="${src.dir}">
-        <include name="**/PhoneNumberMetadataProto*"/>
+        <include name="**/*"/>
       </fileset>
     </jar>
   </target>
